@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <script
+      src="https://kit.fontawesome.com/a59b9b09ab.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Horizontal Scroll Bar</title>
+    <link rel="stylesheet" href="past.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Lexend+Deca:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <div class="logo">
+        <img src="images/smalllogo.png" class="smalllogo" />
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">DataQuest</a></li>
+        <li><a href="info.html">FAQ</a></li>
+        <li><a href="past.html">Past Year</a></li>
+        <li><a href="sponsor.html">Sponsors</a></li>
+      </ul>
+    </nav>
+
+    <div class="screen">
+      <div class="main-scroll-div">
+        <div class="cover">
+          <div class="scroll-images">
+            <div class="child">
+              <img
+                class="child-img"
+                src="images/pic1.png"
+                alt="image"
+                onclick="openModal(this.src)"
+              />
+            </div>
+            <div class="child">
+              <img
+                class="child-img"
+                src="images/pic2.png"
+                alt="image"
+                onclick="openModal(this.src)"
+              />
+            </div>
+            <div class="child">
+              <img
+                class="child-img"
+                src="images/pic3.png"
+                alt="image"
+                onclick="openModal(this.src)"
+              />
+            </div>
+            <div class="child">
+              <img
+                class="child-img"
+                src="images/pic4.png"
+                alt="image"
+                onclick="openModal(this.src)"
+              />
+            </div>
+            <div class="child">
+              <img
+                class="child-img"
+                src="images/chatgpt.png"
+                alt="image"
+                onclick="openModal(this.src)"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal for displaying large image -->
+      <div class="modal" id="imageModal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img id="modalImage" src="" alt="Large Image" />
+      </div>
+
+      <img src="images/tabs.png" class="tabs" />
+      <h1>Last Year</h1>
+
+      <script src="past.js"></script>
+    </div>
+  </body>
+</html>

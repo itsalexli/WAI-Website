@@ -1,0 +1,126 @@
+body {
+  background-image: linear-gradient(90deg, purple, blue);
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+.right-container {
+  flex: 1;
+}
+
+.left-container {
+  flex: 1;
+}
+
+.biglogo {
+  display: inline-block;
+  padding: 0;
+  width: 700px;
+  padding-top: 200px;
+  animation: fadeInUp 1.5s ease-out forwards;
+  opacity: 0;
+}
+
+.textlogo {
+  padding-left: 200px;
+  padding-top: 200px;
+  width: 600px;
+  padding-bottom: 100px;
+  animation: fadeInUp 2s ease-out forwards;
+  opacity: 0;
+}
+
+.description {
+  color: white;
+  font-family: Montserrat;
+  font-size: 30px;
+  padding-left: 200px;
+  margin: 0;
+  padding-top: 5px;
+  animation: fadeInUp 2s ease-out forwards;
+  opacity: 0;
+}
+
+.date {
+  padding-top: 30px;
+  color: white;
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 40px;
+  padding-left: 200px;
+  margin: 0;
+  animation: fadeInUp 2s ease-out forwards;
+  opacity: 0;
+  text-decoration: underline;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  z-index: 101;
+  top: 10px;
+  left: 20px;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  padding-left: 250px;
+}
+
+.nav-links li {
+  margin-left: 100px;
+}
+
+.nav-links a {
+  color: #fff;
+  font-size: 18px;
+  font-family: Montserrat;
+}
+
+.smalllogo {
+  padding-top: 20px;
+  padding-left: 20px;
+  width: 60px;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.about-container {
+  position: relative;
+  display: inline-block;
+}
+
+.about-modal {
+  display: none;
+  position: absolute;
+  top: 30px;
+  left: 550px;
+  background-color: rgba(0, 0, 0, 0.226);
+  color: white;
+  padding: 15px;
+  border-radius: 5px;
+  width: 500px;
+  font-family: Montserrat;
+  font-size: 17px;
+  z-index: 102;
+  box-shadow: 0 4px 6px rgba(14, 14, 14, 0.044);
+  animation: fadeInUp 2s ease-out forwards;
+}
+
+.about-container:hover .about-modal {
+  display: block;
+}
